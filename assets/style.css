@@ -1,0 +1,14 @@
+body {
+    background-color: #f2f2f2;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    padding-top: 40px;
+
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
