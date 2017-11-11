@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Panel } from "react-bootstrap";
+import Col from "react-bootstrap/lib/Col";
+import Panel from "react-bootstrap/lib/Panel";
 
 export default class App extends React.Component {
 	render = () => (
