@@ -16,16 +16,15 @@ const tag = tag => {
 
 const data = [
   {
-    name: "TapetyCytaty.pl",
+    name: "Projekt 1...",
     description: "Opis projektu...",
-    link: "http://google.com",
+    link: "http://127.0.0.1",
     tags: [tag("Javascript"), tag("Machine Learning")]
   },
   {
     name: "Inny projekt",
     description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [tag("trololo"), tag("C++"), tag("Python")]
+    tags: [tag("C++"), tag("Python")]
   }
 ];
 

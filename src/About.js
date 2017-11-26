@@ -1,16 +1,15 @@
 import React from "react";
+import Alert from "react-bootstrap/lib/Alert";
+import constructionSign from "../assets/construction.png";
 
 export const About = () => (
   <div>
     <h2>BergSoft Maciej Baranowski</h2>
-    <span>Strona w budowie / Site under construction:</span>
-    <hr />
-    <span>
-      🌐 <a href="http://www.maciej-baranowski.pl">www.maciej-baranowski.pl</a>
-    </span>
-    <br />
-    <span>
-      📧 <a href="mailto:bergsoft@maciej-baranowski.pl">bergsoft@maciej-baranowski.pl</a>
-    </span>
+    <Alert bsStyle="warning" style={{ textAlign: "center" }}>
+      <div>
+        <img src={constructionSign} style={{ height: "64px", margin: "15px" }} />
+      </div>
+      <strong>Strona w budowie / Site under construction</strong>
+    </Alert>
   </div>
 );
