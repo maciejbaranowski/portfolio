@@ -2,67 +2,19 @@ import React from "react";
 import Button from "react-bootstrap/lib/Button";
 import Col from "react-bootstrap/lib/Col";
 import { ProjectDescription } from "./ProjectDescription";
-
-export const tagsList = [
-  "Javascript",
-  "Webdevelopment",
-  "ReactJS",
-  "HTML5",
-  "CSS3",
-  "Image Processing",
-  "C++",
-  "Machine Learning"
-];
-
-const projectsList = [
-  {
-    name: "Jakiś fajny projekt",
-    description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [0]
-  },
-  {
-    name: "Inny projekt",
-    description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [0, 1]
-  },
-  {
-    name: "Inny projekt",
-    description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [0, 1]
-  },
-  {
-    name: "Inny projekt",
-    description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [0, 5]
-  },
-  {
-    name: "Inny projekt",
-    description: "Opis projektu...",
-    link: "http://google.com",
-    tags: [4, 5]
-  },
-  {
-    name: "A ten jest w JS",
-    description: "Opis projektu...",
-    tags: [2]
-  }
-];
+import DataProvider from "./DataProvider";
 
 export default class Projects extends React.Component {
   constructor() {
     super();
     this.state = {
-      active: Array(tagsList.length).fill(true)
+      active: Array(DataProvider.getTags().length).fill(true)
     };
   }
 
   getTags = active => {
     let tags = [];
-    for (let [index, tag] of tagsList.entries()) {
+    for (let [index, tag] of DataProvider.getTags().entries()) {
       let style = this.state.active[index] ? "primary" : "default";
       tags.push(
         <span key={index}>
@@ -94,7 +46,7 @@ export default class Projects extends React.Component {
 
   getProjects = () => {
     let projects = [];
-    for (let [index, project] of projectsList.entries()) {
+    for (let [index, project] of DataProvider.getProjects().entries()) {
       if (this.isTagSelectedForProject(project.tags)) {
         projects.push(<ProjectDescription project={project} key={index} />);
       }

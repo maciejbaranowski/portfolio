@@ -1,12 +1,12 @@
 import React from "react";
 import Well from "react-bootstrap/lib/Well";
 import Badge from "react-bootstrap/lib/Badge";
-import { tagsList } from "./Projects";
+import DataProvider from "./DataProvider";
 
 const getTags = tags => {
   return tags.map((tag, index) => (
     <span key={index}>
-      &nbsp;<Badge>{tagsList[tag]}</Badge>
+      &nbsp;<Badge>{DataProvider.getTags()[tag]}</Badge>
     </span>
   ));
 };
