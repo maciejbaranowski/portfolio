@@ -14,7 +14,7 @@ export default class App extends React.Component {
 
 	render = () => (
 		<Col md={10} mdOffset={1}>
-			<Panel style={{ maxHeight: "90vh", overflowY: "scroll", verticalAlign: "middle" }}>
+			<Panel>
 				<Col sm={3}>
 					<Navigation
 						onNavigate={newActivePage => {
@@ -23,7 +23,7 @@ export default class App extends React.Component {
 						currentPage={this.state.activePage}
 					/>
 				</Col>
-				<Col sm={9}>
+				<Col sm={9} className="scrollableFullHeightContent">
 					<Content activePage={this.state.activePage} />
 				</Col>
 			</Panel>

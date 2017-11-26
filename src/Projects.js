@@ -28,6 +28,24 @@ const projectsList = [
     tags: [0, 1]
   },
   {
+    name: "Inny projekt",
+    description: "Opis projektu...",
+    link: "http://google.com",
+    tags: [0, 1]
+  },
+  {
+    name: "Inny projekt",
+    description: "Opis projektu...",
+    link: "http://google.com",
+    tags: [0, 5]
+  },
+  {
+    name: "Inny projekt",
+    description: "Opis projektu...",
+    link: "http://google.com",
+    tags: [4, 5]
+  },
+  {
     name: "A ten jest w JS",
     description: "Opis projektu...",
     tags: [2]
