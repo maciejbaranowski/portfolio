@@ -53,20 +53,20 @@ const data = [
     name: "Algorytmy detekcji i śledzenia twarzy (praca inżynierska)",
     description: "Implementacja i analiza algorytmów detekcji twarzy metodą dopasowywania wzorców falek Haara",
     link: "http://bergsoft.pl/projekty/praca_inzynierska.pdf",
-    tags: [tag("Machine Learning"), tag("C++"), tag("Szkoleniowe (niekomercyjne)")]
+    tags: [tag("Machine Learning"), tag("C++"), tag("Akademickie (niekomercyjne)")]
   },
   {
     name: "Algorytmy rozpoznawania ręcznych tekstów strukturyzowanych (praca magisterska)",
     description:
       "Implementacja i analiza metod rozpoznawania ręcznie pisanych liter, oparte o metody klasfikacji sieciami neuronowymi i SVM",
     link: "http://bergsoft.pl/projekty/praca_magisterska.pdf",
-    tags: [tag("Machine Learning"), tag("Matlab"), tag("Szkoleniowe (niekomercyjne)")]
+    tags: [tag("Machine Learning"), tag("Matlab"), tag("Akademickie (niekomercyjne)")]
   },
   {
     name: "Organizer osobisty",
     description: "Organizer osobisty wykonany jako projekt na studiach, z wykorzystaniem PHP i MySql",
     link: "http://bergsoft.pl/projekty/organizer_demo",
-    tags: [tag("PHP"), tag("Szkoleniowe (niekomercyjne)")]
+    tags: [tag("PHP"), tag("Akademickie (niekomercyjne)")]
   },
   {
     name: "Strona firmy bergsoft",

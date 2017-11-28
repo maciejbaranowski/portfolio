@@ -4,9 +4,6 @@ import Col from "react-bootstrap/lib/Col";
 import { ProjectDescription } from "./ProjectDescription";
 import DataProvider from "./DataProvider";
 
-import Alert from "react-bootstrap/lib/Alert";
-import constructionSign from "../assets/construction.png";
-
 export default class Projects extends React.Component {
   constructor() {
     super();
@@ -60,12 +57,6 @@ export default class Projects extends React.Component {
   render = () => (
     <div>
       <h2>Projekty</h2>
-      <Alert bsStyle="warning" style={{ textAlign: "center" }}>
-        <div>
-          <img src={constructionSign} style={{ height: "64px", margin: "15px" }} />
-        </div>
-        <strong>Strona w budowie / Site under construction</strong>
-      </Alert>
       <Col>Filtrowanie: {this.getTags()}</Col>
       <Col>{this.getProjects()}</Col>
     </div>
