@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "react-bootstrap/lib/Button";
-import Col from "react-bootstrap/lib/Col";
 import { ProjectDescription } from "./ProjectDescription";
 import DataProvider from "./DataProvider";
 
@@ -57,8 +56,8 @@ export default class Projects extends React.Component {
   render = () => (
     <div>
       <h2>Projekty</h2>
-      <Col>Filtrowanie: {this.getTags()}</Col>
-      <Col>{this.getProjects()}</Col>
+      <p>Filtrowanie: {this.getTags()}</p>
+      <div>{this.getProjects()}</div>
     </div>
   );
 }

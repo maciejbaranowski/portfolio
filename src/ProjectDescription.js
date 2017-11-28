@@ -19,9 +19,9 @@ export const ProjectDescription = props => {
   return (
     <Well>
       <h4>{props.project.name}</h4>
-      <div>{props.project.description}</div>
-      <div>🔗 {getLink(props.project.link)}</div>
-      <div>{getTags(props.project.tags)}</div>
+      <p>{props.project.description}</p>
+      <p>🔗 {getLink(props.project.link)}</p>
+      <p>{getTags(props.project.tags)}</p>
     </Well>
   );
 };

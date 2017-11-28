@@ -32,7 +32,7 @@ const data = [
   {
     name: "Pixels - strona-wizytówka",
     description: "Prosta strona-wizytówka dla firmy Pixels A.M.G. z nietypowym układem w formie pływających okręgów",
-    link: "http://bergsoft.pl/pixels",
+    link: "http://bergsoft.pl/projects/pixels",
     tags: [tag("Javascript"), tag("HTML5"), tag("CSS3")]
   },
   {
@@ -46,26 +46,26 @@ const data = [
     description:
       "Aplikacja webowa umożliwiająca wizualizację zdjęć w formie porozrzucanych fotografii z podpisami.\
       Jako źródło zdjęć zostało użyte publiczne API serwisu Flickr",
-    link: "http://bergsoft.pl/thailand",
+    link: "http://bergsoft.pl/projects/thailand",
     tags: [tag("Javascript"), tag("HTML5"), tag("CSS3")]
   },
   {
     name: "Algorytmy detekcji i śledzenia twarzy (praca inżynierska)",
     description: "Implementacja i analiza algorytmów detekcji twarzy metodą dopasowywania wzorców falek Haara",
-    link: "http://bergsoft.pl/projekty/praca_inzynierska.pdf",
+    link: "http://bergsoft.pl/projects/praca_inzynierska.pdf",
     tags: [tag("Machine Learning"), tag("C++"), tag("Akademickie (niekomercyjne)")]
   },
   {
     name: "Algorytmy rozpoznawania ręcznych tekstów strukturyzowanych (praca magisterska)",
     description:
       "Implementacja i analiza metod rozpoznawania ręcznie pisanych liter, oparte o metody klasfikacji sieciami neuronowymi i SVM",
-    link: "http://bergsoft.pl/projekty/praca_magisterska.pdf",
+    link: "http://bergsoft.pl/projects/praca_magisterska.pdf",
     tags: [tag("Machine Learning"), tag("Matlab"), tag("Akademickie (niekomercyjne)")]
   },
   {
     name: "Organizer osobisty",
     description: "Organizer osobisty wykonany jako projekt na studiach, z wykorzystaniem PHP i MySql",
-    link: "http://bergsoft.pl/projekty/organizer_demo",
+    link: "http://bergsoft.pl/projects/organizer_demo",
     tags: [tag("PHP"), tag("Akademickie (niekomercyjne)")]
   },
   {
