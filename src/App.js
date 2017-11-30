@@ -21,6 +21,10 @@ export default class App extends React.Component {
 							this.setState({ activePage: newActivePage });
 						}}
 						currentPage={this.state.activePage}
+						languageChange={lang => {
+							window.location.hash = lang;
+							this.setState({});
+						}}
 					/>
 				</Col>
 				<Col sm={9} className="scrollableFullHeightContent">

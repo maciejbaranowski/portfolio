@@ -17,10 +17,22 @@ export const Navigation = props => (
     </Nav>
     <hr />
     <ButtonGroup>
-      <Button bsStyle={DataProvider.isPl() ? "primary" : "default"} bsSize="small" href="http://www.bergsoft.pl/#pl">
+      <Button
+        bsStyle={DataProvider.isPl() ? "primary" : "default"}
+        bsSize="small"
+        onClick={() => {
+          props.languageChange("pl");
+        }}
+      >
         Polski
       </Button>
-      <Button bsStyle={DataProvider.isEn() ? "primary" : "default"} bsSize="small" href="http://www.bergsoft.pl/#en">
+      <Button
+        bsStyle={DataProvider.isEn() ? "primary" : "default"}
+        bsSize="small"
+        onClick={() => {
+          props.languageChange("en");
+        }}
+      >
         English
       </Button>
     </ButtonGroup>
