@@ -56,8 +56,8 @@ export default class Projects extends React.Component {
 
   render = () => (
     <div>
-      <h2>Projekty</h2>
-      <p>Filtrowanie: {this.getTags()}</p>
+      <h2>{DataProvider.getTranslations().projects}</h2>
+      <div>Filtr: {this.getTags()}</div>
       <ListGroup>{this.getProjects()}</ListGroup>
     </div>
   );
