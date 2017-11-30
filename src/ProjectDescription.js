@@ -1,5 +1,5 @@
 import React from "react";
-import Well from "react-bootstrap/lib/Well";
+import ListGroupItem from "react-bootstrap/lib/ListGroupItem";
 import Badge from "react-bootstrap/lib/Badge";
 import DataProvider from "./DataProvider";
 
@@ -17,11 +17,10 @@ const getLink = link => {
 };
 export const ProjectDescription = props => {
   return (
-    <Well>
-      <h4>{props.project.name}</h4>
+    <ListGroupItem header={props.project.name}>
       <p>{props.project.description}</p>
       <p>🔗 {getLink(props.project.link)}</p>
       <p>{getTags(props.project.tags)}</p>
-    </Well>
+    </ListGroupItem>
   );
 };
