@@ -1,8 +1,9 @@
 import React from "react";
+import DataProvider from "./DataProvider";
 
 export const Contact = () => (
   <div>
-    <h2>Kontakt</h2>
+    <h2>{DataProvider.getTranslations().contact}</h2>
     <span>
       🌐 <a href="http://www.maciej-baranowski.pl">www.maciej-baranowski.pl</a>
     </span>

@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "react-bootstrap/lib/Nav";
 import NavItem from "react-bootstrap/lib/NavItem";
+import ButtonGroup from "react-bootstrap/lib/ButtonGroup";
+import Button from "react-bootstrap/lib/Button";
 import logo from "../assets/logo.png";
 import { ABOUT, PROJECTS, CONTACT } from "./Content";
 import DataProvider from "./DataProvider";
@@ -13,5 +15,14 @@ export const Navigation = props => (
       <NavItem eventKey={PROJECTS}>{DataProvider.getTranslations().projects}</NavItem>
       <NavItem eventKey={CONTACT}>{DataProvider.getTranslations().contact}</NavItem>
     </Nav>
+    <hr />
+    <ButtonGroup>
+      <Button bsStyle={DataProvider.isPl() ? "primary" : "default"} bsSize="small" href="http://www.bergsoft.pl/#pl">
+        Polski
+      </Button>
+      <Button bsStyle={DataProvider.isEn() ? "primary" : "default"} bsSize="small" href="http://www.bergsoft.pl/#en">
+        English
+      </Button>
+    </ButtonGroup>
   </div>
 );

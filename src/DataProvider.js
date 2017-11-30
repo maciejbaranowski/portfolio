@@ -208,8 +208,14 @@ class DataProviderEn {
 }
 
 export default class DataProvider {
+  static isEn = () => {
+    return window.location.hash == "#en";
+  };
+  static isPl = () => {
+    return !DataProvider.isEn();
+  };
   static getTags = () => {
-    if (window.location.hash == "#en") {
+    if (DataProvider.isEn()) {
       return DataProviderEn.getTags();
     } else {
       return DataProviderPl.getTags();
@@ -217,7 +223,7 @@ export default class DataProvider {
   };
 
   static getProjects = () => {
-    if (window.location.hash == "#en") {
+    if (DataProvider.isEn()) {
       return DataProviderEn.getProjects();
     } else {
       return DataProviderPl.getProjects();
@@ -225,7 +231,7 @@ export default class DataProvider {
   };
 
   static getTranslations = () => {
-    if (window.location.hash == "#en") {
+    if (DataProvider.isEn()) {
       return DataProviderEn.getTranslations();
     } else {
       return DataProviderPl.getTranslations();
