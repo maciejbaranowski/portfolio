@@ -18,6 +18,12 @@ const tagEn = tag => {
 
 const dataPl = [
   {
+    name: "3D Homepage",
+    description: "Aplikacja webowa tworząca stronę startową w postaci grywalnego modelu 3D.",
+    link: "http://bergsoft.pl/projects/homepage",
+    tags: [tagPl("Javascript"), tagPl("ReactJS"), tagPl("3D")]
+  },
+  {
     name: "TapetyCytaty.pl",
     description: "Aplikacja webowa mająca na celu udostępnianie obrazów z podpisami w formie cytatów.",
     link: "https://github.com/maciejbaranowski/wallpapers-frontend",
@@ -86,6 +92,12 @@ const dataPl = [
 ];
 
 const dataEn = [
+  {
+    name: "3D Homepage",
+    description: "Web application serving as gameable 3D scene hub.",
+    link: "http://bergsoft.pl/projects/homepage",
+    tags: [tagEn("Javascript"), tagEn("ReactJS"), tagEn("3D")]
+  },
   {
     name: "TapetyCytaty.pl",
     description: "Web application for displaying a huge database of quote-images (Content in polish version only).",
@@ -169,10 +181,10 @@ class DataProviderPl {
       description: [
         "Bergsoft - usługi z zakresu:",
         <ul>
-          <li> Rozwijanie oprogramowania C++</li>
-          <li> Tworzenie aplikacji internetowych</li>
-          <li> Consulting IT </li>
-          <li> Zarządzanie systemami IT</li>
+          <li key={0}> Rozwijanie oprogramowania C++</li>
+          <li key={1}> Tworzenie aplikacji internetowych</li>
+          <li key={2}> Consulting IT </li>
+          <li key={3}> Zarządzanie systemami IT</li>
         </ul>
       ]
     };
@@ -197,10 +209,10 @@ class DataProviderEn {
       description: [
         "Bergsoft - services:",
         <ul>
-          <li> C++ Software development</li>
-          <li> Web applications development</li>
-          <li> IT Consulting </li>
-          <li> IT systems maintenance</li>
+          <li key={0}> C++ Software development</li>
+          <li key={1}> Web applications development</li>
+          <li key={2}> IT Consulting </li>
+          <li key={3}> IT systems maintenance</li>
         </ul>
       ]
     };
