@@ -2,6 +2,8 @@ import React from "react";
 import {About} from "./About";
 import Projects from "./Projects";
 import {Contact} from "./Contact";
+import {Cv} from "./CV";
+import {Private} from "./Private";
 
 export const NONE = 0;
 export const ABOUT = 1;
@@ -17,11 +19,11 @@ export const Content = props => {
     case PROJECTS:
       return <Projects/>;
     case CV:
-      return <Contact/>;
+      return <Cv/>;
     case CONTACT:
       return <Contact/>;
     case PRIVATE:
-      return <Contact/>;
+      return <Private/>;
     default:
       return <div>Page not found</div>;
   }

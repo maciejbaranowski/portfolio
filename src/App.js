@@ -19,25 +19,13 @@ export default class App extends React.Component {
 							this.setState({ activePage: newActivePage });
 						}}
 						currentPage={this.state.activePage}
-						languageChange={lang => {
-							window.location.hash = lang;
-							this.setState({});
-						}}
 					/>
       <div
-        className={"content content-" + (this.state.activePage !== NONE
+        className={"scrollableFullHeightContent content content-" + (this.state.activePage !== NONE
         ? "active"
         : "hidden")}>
         <Content activePage={this.state.activePage}/>
       </div>
     </div>
-  /*<Col md={10} mdOffset={1}>
-			<Panel>
-				<Col sm={3}>
-					 </Col> < Col sm = {
-								9
-				}
-				className = "scrollableFullHeightContent" > <Content activePage={this.state.activePage}/> < /Col>
-			</Panel > </Col>*/
   );
 }

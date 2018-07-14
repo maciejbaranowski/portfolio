@@ -195,16 +195,16 @@ input {
   opacity: 0;
 }
 
-.menuBtn {
+.btn-lang {
   width: 100%;
   height: 100%;
 }
-.menuBtn,
-.closeBtn {
+.btn-lang,
+.btn-logo {
   transition: all 0.5s ease;
 }
 
-.closeBtn {
+.btn-logo {
   top: -110px;
   position: relative;
   text-align: center;
@@ -212,19 +212,19 @@ input {
   opacity: 0;
 }
 
-.menu-expanded .menuBtn,
-.menu-final .menuBtn {
+.menu-expanded .btn-lang,
+.menu-final .btn-lang {
   transform: translateY(-200px);
   opacity: 0;
 }
 
-.menu-expanded .closeBtn,
-.menu-final .closeBtn {
+.menu-expanded .btn-logo,
+.menu-final .btn-logo {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.btn-lang-left {
+.btn-lang-top {
   text-align: center;
   padding: 40px 0 20px 0;
   height: 20px;
@@ -232,7 +232,7 @@ input {
   z-index: 3;
 }
 
-.btn-lang-right {
+.btn-lang-bottom {
   text-align: center;
   padding: 20px 0 40px 0;
   height: 20px;

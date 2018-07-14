@@ -180,6 +180,7 @@ class DataProviderPl {
       contact: "Kontakt",
       cv: "CV",
       private: "Prywatne",
+      accessRestricted: "Brak dostępu",
       description: [
         "Bergsoft - usługi z zakresu:",
         <ul>
@@ -210,6 +211,7 @@ class DataProviderEn {
       contact: "Contact",
       cv: "CV",
       private: "Private",
+      accessRestricted: "No Access",
       description: [
         "Bergsoft - services:",
         <ul>
