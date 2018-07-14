@@ -192,6 +192,42 @@ class DataProviderPl {
       ]
     };
   };
+  
+  static getCv = () => {
+    return [
+      {
+          text: "Doświadczenie",
+          icon: "icon-briefcase",
+          descriptions: [
+              ["BergSoft Maciej Baranowski", "Programista - konsultant", "Listopad 2017 - dziś"],
+              ["Qiagen", "C++ Software developer", "Wrzesień 2016 - Listopad 2017"],
+              ["Nokia Networks", "Software developer", "Październik 2014 - Wrzesień 2016"],
+              ["Nokia Solutions and Networks", "Software developer", "Czerwiec 2013 - Wrzesień 2013"]
+          ]
+      },
+      {
+          text: "Edukacja",
+          icon: "icon-file-text-alt",
+          descriptions: [
+              [
+                  "Informatyka studia magisterskie",
+                  "Politechnika Wrocławska",
+                  "2015 - 2016 (ukończone z oceną bardzo dobrą)"
+              ],
+              [
+                  "Automatyka i Robotyka studia inżynierskie",
+                  "Politechnika Wrocławska",
+                  "2011 - 2015 (ukończone z wyróżnieniem)"
+              ]
+          ]
+      },
+      {
+          text: "Języki",
+          icon: "icon-flag",
+          descriptions: [["Angielski", "Zaawansowany (certyfikat poziom C1)", ""], ["Niemiecki", "Podstawowy", ""]]
+      }
+    ]
+  }
 }
 
 class DataProviderEn {
@@ -223,6 +259,39 @@ class DataProviderEn {
       ]
     };
   };
+  
+  static getCv = () => {
+    return [
+      {
+          text: "Experience",
+          descriptions: [
+              ["BergSoft Maciej Baranowski", "Software development Consultant", "November 2017 - Ongoing"],
+              ["Qiagen", "C++ Software developer", "September 2016 - November 2017"],
+              ["Nokia Networks", "Software developer", "October 2014 - September 2016"],
+              ["Nokia Solutions and Networks", "Software developer", "June 2013 - September 2013"]
+          ]
+      },
+      {
+          text: "Education",
+          descriptions: [
+              ["Computer Science (MSc)", "Wroclaw Univ. of Tech.", "2015 - 2016"],
+              [
+                  "Control Engineering and Robotics (Eng)",
+                  "Wroclaw Univ. of Tech.",
+                  "2011 - 2015 (Finished with excellent grade)"
+              ]
+          ]
+      },
+      {
+          text: "Languages",
+          descriptions: [
+              ["Polish", "Native", ""],
+              ["English", "Advanced (C1 Level certificate)", ""],
+              ["German", "Basic", ""]
+          ]
+      }
+    ]
+  }
 }
 
 export default class DataProvider { 
@@ -248,6 +317,13 @@ export default class DataProvider {
       return DataProviderEn.getTranslations();
     } else {
       return DataProviderPl.getTranslations();
+    }
+  };
+  static getCv = () => {
+    if (DataProvider.isEn) {
+      return DataProviderEn.getCv();
+    } else {
+      return DataProviderPl.getCv();
     }
   };
 }
