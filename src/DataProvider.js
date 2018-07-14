@@ -178,6 +178,8 @@ class DataProviderPl {
       about: "O firmie",
       projects: "Projekty",
       contact: "Kontakt",
+      cv: "CV",
+      private: "Prywatne",
       description: [
         "Bergsoft - usługi z zakresu:",
         <ul>
@@ -206,6 +208,8 @@ class DataProviderEn {
       about: "About",
       projects: "Projects",
       contact: "Contact",
+      cv: "CV",
+      private: "Private",
       description: [
         "Bergsoft - services:",
         <ul>
@@ -219,15 +223,10 @@ class DataProviderEn {
   };
 }
 
-export default class DataProvider {
-  static isEn = () => {
-    return window.location.hash == "#en";
-  };
-  static isPl = () => {
-    return !DataProvider.isEn();
-  };
+export default class DataProvider { 
+  static isEn = false;
   static getTags = () => {
-    if (DataProvider.isEn()) {
+    if (DataProvider.isEn) {
       return DataProviderEn.getTags();
     } else {
       return DataProviderPl.getTags();
@@ -235,7 +234,7 @@ export default class DataProvider {
   };
 
   static getProjects = () => {
-    if (DataProvider.isEn()) {
+    if (DataProvider.isEn) {
       return DataProviderEn.getProjects();
     } else {
       return DataProviderPl.getProjects();
@@ -243,7 +242,7 @@ export default class DataProvider {
   };
 
   static getTranslations = () => {
-    if (DataProvider.isEn()) {
+    if (DataProvider.isEn) {
       return DataProviderEn.getTranslations();
     } else {
       return DataProviderPl.getTranslations();
