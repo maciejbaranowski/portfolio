@@ -53,7 +53,7 @@ const dataPl = [
   {
     name: "Osobista strona-wizytówka",
     description: "Prosta strona typu SPA z wyglądem opartym o framework bootstrap",
-    link: "http://bergsoft.pl/projects/personal",
+    link: "https://maciej-baranowski.herokuapp.com/",
     tags: [tagPl("Javascript"), tagPl("HTML5"), tagPl("CSS3"), tagPl("Bootstrap3")]
   },
   {
@@ -128,7 +128,7 @@ const dataEn = [
   {
     name: "Personal website",
     description: "Simple personal website built on bootstrap framework",
-    link: "http://bergsoft.pl/projects/personal",
+    link: "https://maciej-baranowski.herokuapp.com/",
     tags: [tagEn("Javascript"), tagEn("HTML5"), tagEn("CSS3"), tagEn("Bootstrap3")]
   },
   {

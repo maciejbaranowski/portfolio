@@ -13,7 +13,7 @@ export default class App extends React.Component {
   }
 
   render = () => (
-    <div>
+    <div className="container">
       <Navigation
 						onNavigate={newActivePage => {
 							this.setState({ activePage: newActivePage });

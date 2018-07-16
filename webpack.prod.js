@@ -4,7 +4,7 @@ const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: "./main.js",
-  output: { path: __dirname, filename: "bundle.js" },
+  output: { path: __dirname, filename: "./build/bundle.js" },
   module: {
     loaders: [
       {
