@@ -21,7 +21,7 @@ const dataPl = [
     name: "3D Homepage",
     description: "Aplikacja webowa tworząca stronę startową w postaci grywalnego modelu 3D.",
     link: "http://bergsoft.pl/projects/homepage",
-    tags: [tagPl("Javascript"), tagPl("ReactJS"), tagPl("3D")]
+    tags: [tagPl("Javascript"), tagPl("ReactJS"), tagPl("3D"), tagPl("ThreeJS")]
   },
   {
     name: "TapetyCytaty.pl",
@@ -53,7 +53,7 @@ const dataPl = [
   {
     name: "Osobista strona-wizytówka",
     description: "Prosta strona typu SPA z wyglądem opartym o framework bootstrap",
-    link: "http://maciej-baranowski.pl",
+    link: "http://bergsoft.pl/projects/personal",
     tags: [tagPl("Javascript"), tagPl("HTML5"), tagPl("CSS3"), tagPl("Bootstrap3")]
   },
   {
@@ -96,7 +96,7 @@ const dataEn = [
     name: "3D Homepage",
     description: "Web application serving as gameable 3D scene hub.",
     link: "http://bergsoft.pl/projects/homepage",
-    tags: [tagEn("Javascript"), tagEn("ReactJS"), tagEn("3D")]
+    tags: [tagEn("Javascript"), tagEn("ReactJS"), tagEn("3D"), tagEn("ThreeJS")]
   },
   {
     name: "TapetyCytaty.pl",
@@ -128,7 +128,7 @@ const dataEn = [
   {
     name: "Personal website",
     description: "Simple personal website built on bootstrap framework",
-    link: "http://maciej-baranowski.pl",
+    link: "http://bergsoft.pl/projects/personal",
     tags: [tagEn("Javascript"), tagEn("HTML5"), tagEn("CSS3"), tagEn("Bootstrap3")]
   },
   {
@@ -175,19 +175,19 @@ class DataProviderPl {
   static getTranslations = () => {
     return {
       companyName: "BergSoft Maciej Baranowski",
-      about: "O firmie",
+      about: "O mnie",
       projects: "Projekty",
       contact: "Kontakt",
       cv: "CV",
       private: "Prywatne",
       accessRestricted: "Brak dostępu",
       description: [
-        "Bergsoft - usługi z zakresu:",
+        "Jestem programistą z Wrocławia, w ramach firmy Bergsoft zajmuję się: ",
         <ul>
-          <li key={0}> Rozwijanie oprogramowania C++</li>
+          <li key={0}> Rozwijaniem oprogramowania C++</li>
           <li key={1}> Tworzenie aplikacji internetowych</li>
-          <li key={2}> Consulting IT </li>
-          <li key={3}> Zarządzanie systemami IT</li>
+          <li key={2}> Consultingiem IT </li>
+          <li key={3}> Zarządzaniem systemami IT</li>
         </ul>
       ]
     };
@@ -249,7 +249,7 @@ class DataProviderEn {
       private: "Private",
       accessRestricted: "No Access",
       description: [
-        "Bergsoft - services:",
+        "I am a programmer located in Wroclaw, Poland. I offer services of:",
         <ul>
           <li key={0}> C++ Software development</li>
           <li key={1}> Web applications development</li>

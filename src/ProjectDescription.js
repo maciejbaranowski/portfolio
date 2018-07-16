@@ -1,12 +1,11 @@
 import React from "react";
-import ListGroupItem from "react-bootstrap/lib/ListGroupItem";
-import Badge from "react-bootstrap/lib/Badge";
 import DataProvider from "./DataProvider";
+import "../styles/Projects.css";
 
 const getTags = tags => {
   return tags.map((tag, index) => (
     <span key={index}>
-      &nbsp;<Badge>{DataProvider.getTags()[tag]}</Badge>
+      {" "}<span className="project-tag">#{DataProvider.getTags()[tag]}</span>
     </span>
   ));
 };
@@ -16,11 +15,13 @@ const getLink = link => {
   return <a href={link}>{link}</a>;
 };
 export const ProjectDescription = props => {
+  console.log(props);
   return (
-    <ListGroupItem header={props.project.name}>
+    <div className="project-item">
+      <span className="project-name">{props.project.name}</span>
       <p>{props.project.description}</p>
       <p>🔗 {getLink(props.project.link)}</p>
       <p>{getTags(props.project.tags)}</p>
-    </ListGroupItem>
+    </div>
   );
 };

@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/Cv.css";
+
 import DataProvider from "./DataProvider";
 
 export const Cv = () => {
@@ -6,7 +8,7 @@ export const Cv = () => {
     let elements = section.descriptions.map(
       (desc,i) => {
         return <div className="cv-element" key={i}>
-          <grey>{desc[0]}</grey> | {desc[1]}<br/>
+          <span className="cv-element-title">{desc[0]}</span> | {desc[1]}<br/>
           {desc[2]}{desc[2] === "" ? "" : <br/>}
         </div>
       });
@@ -15,5 +17,8 @@ export const Cv = () => {
       {elements}
     </div>
   });
-  return <div>{sections}</div>
+  return <div>
+    <h2>{DataProvider.getTranslations().cv}</h2>
+    {sections}
+  </div>
 }

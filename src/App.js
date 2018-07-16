@@ -1,14 +1,14 @@
 import React from "react";
-import Col from "react-bootstrap/lib/Col";
-import Panel from "react-bootstrap/lib/Panel";
+import "../styles/App.css";
+
 import {Navigation} from "./Navigation";
-import {Content, NONE} from "./Content";
+import {Content, NONE, PROJECTS, CV} from "./Content";
 
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      activePage: NONE
+      activePage: CV
     };
   }
 
