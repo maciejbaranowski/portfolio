@@ -15,9 +15,8 @@ const getLink = link => {
   return <a href={link}>{link}</a>;
 };
 export const ProjectDescription = props => {
-  console.log(props);
   return (
-    <div className="project-item">
+    <div className="mini-panel">
       <span className="project-name">{props.project.name}</span>
       <p>{props.project.description}</p>
       <p>🔗 {getLink(props.project.link)}</p>

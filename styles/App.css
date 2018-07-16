@@ -24,8 +24,8 @@ h2 {
   top: 50%;
   left: 50%;
 
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .button {
@@ -250,8 +250,8 @@ h2 {
 
 .content {
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transition: all 0.2s linear 1s;
-  transition: all 0.2s linear 1s;
+  -webkit-transition: all 0.2s linear 0.5s;
+  transition: all 0.2s linear 0.5s;
   border-radius: 15px;
   position: static;
   padding: 15px;
@@ -260,7 +260,7 @@ h2 {
 }
 
 a {
-  transition:  text-shadow 0.3s linear;
+  transition:  text-shadow 0.15s linear;
   text-decoration: none;
 
 }
@@ -284,4 +284,17 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.contact-items > span {
+  margin-top: 8px;
+  display: block;
+}
+
+.mini-panel {
+  border: solid 1px lightgray;
+  box-shadow: 0px 0px 10px gray; 
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 10px; 
 }

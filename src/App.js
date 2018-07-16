@@ -2,13 +2,13 @@ import React from "react";
 import "../styles/App.css";
 
 import {Navigation} from "./Navigation";
-import {Content, NONE, PROJECTS, CV} from "./Content";
+import {Content, NONE} from "./Content";
 
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      activePage: CV
+      activePage: NONE
     };
   }
 

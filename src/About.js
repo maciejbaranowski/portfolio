@@ -1,5 +1,4 @@
 import React from "react";
-import Alert from "react-bootstrap/lib/Alert";
 import DataProvider from "./DataProvider";
 
 export const About = () => (
