@@ -1,0 +1,8 @@
+{
+  "short_name": "Bergsoft",
+  "name": "Bergsoft - Maciej Baranowski",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#00008b",
+  "background_color": "#ffffff"
+}
