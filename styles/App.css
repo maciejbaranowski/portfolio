@@ -1,7 +1,3 @@
-body {
-  overflow: hidden;
-  background: #212121;
-}
 input {
   position: absolute;
   display: none;
@@ -56,10 +52,12 @@ h2 {
   left: -80px;
   top: -80px;
   font-size: 1.2rem;
+  line-height: 1.2rem;
   color: #03a9f4;
 }
 .menu .level-2 > .button {
   font-size: 1rem;
+  line-height: 1rem;
   color: #03a9f4;
   z-index: -2;
   display: inline-flex;
@@ -169,6 +167,7 @@ h2 {
   .content {
     margin-top: 160px;
     max-height: 78vh;
+    left: 0px;
   }
   .menu-final {
     width: 100%;
@@ -253,7 +252,8 @@ h2 {
   -webkit-transition: all 0.2s linear 0.5s;
   transition: all 0.2s linear 0.5s;
   border-radius: 15px;
-  position: static;
+  position: absolute;
+  width: 90vw;
   padding: 15px;
   overflow-y: auto;
 }
@@ -274,14 +274,22 @@ a:hover {
   opacity: 1;
 }
 
-body {
-  background-color: #f2f2f2;
-  font-family: "Open Sans", sans-serif;
+html {
   background-image: url("../assets/background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
 }
 
 .contact-items > span {

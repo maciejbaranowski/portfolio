@@ -1,6 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   entry: "./main.js",
@@ -33,6 +34,10 @@ module.exports = {
         NODE_ENV: JSON.stringify("production")
       }
     }),
-    new UglifyJSPlugin()
+    new UglifyJSPlugin(),
+    new OptimizeCSSAssetsPlugin({
+      cssProcessor: require('cssnano'),
+      cssProcessorOptions: {},
+      safe: true})
   ]
 };

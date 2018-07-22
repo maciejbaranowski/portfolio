@@ -13,7 +13,7 @@ export default class App extends React.Component {
   }
 
   render = () => (
-    <div className="container">
+    <div>
       <Navigation
 						onNavigate={newActivePage => {
 							this.setState({ activePage: newActivePage });
@@ -21,7 +21,7 @@ export default class App extends React.Component {
 						currentPage={this.state.activePage}
 					/>
       <div
-        className={"scrollableFullHeightContent content content-" + (this.state.activePage !== NONE
+        className={"content content-" + (this.state.activePage !== NONE
         ? "active"
         : "hidden")}>
         <Content activePage={this.state.activePage}/>
