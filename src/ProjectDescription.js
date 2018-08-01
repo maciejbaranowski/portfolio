@@ -12,7 +12,7 @@ const getTags = tags => {
 
 const getLink = link => {
   if (link === undefined) return "";
-  return <a href={link}>Link</a>;
+  return <a href={link} target="_blank">Link</a>;
 };
 export const ProjectDescription = props => {
   return (
