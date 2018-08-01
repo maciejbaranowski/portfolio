@@ -68,20 +68,20 @@ const dataPl = [
     name: "Algorytmy detekcji i śledzenia twarzy (praca inżynierska)",
     description: "Implementacja i analiza algorytmów detekcji twarzy metodą dopasowywania wzorców falek Haara",
     link: "http://bergsoft.pl/projects/praca_inzynierska.pdf",
-    tags: [tagPl("Machine Learning"), tagPl("C++"), tagPl("Akademickie (niekomercyjne)")]
+    tags: [tagPl("Machine Learning"), tagPl("C++"), tagPl("Akademickie")]
   },
   {
     name: "Algorytmy rozpoznawania ręcznych tekstów strukturyzowanych (praca magisterska)",
     description:
       "Implementacja i analiza metod rozpoznawania ręcznie pisanych liter, oparte o metody klasfikacji sieciami neuronowymi i SVM",
     link: "http://bergsoft.pl/projects/praca_magisterska.pdf",
-    tags: [tagPl("Machine Learning"), tagPl("Matlab"), tagPl("Akademickie (niekomercyjne)")]
+    tags: [tagPl("Machine Learning"), tagPl("Matlab"), tagPl("Akademickie")]
   },
   {
     name: "Organizer osobisty",
     description: "Organizer osobisty wykonany jako projekt na studiach, z wykorzystaniem PHP i MySql",
     link: "http://bergsoft.pl/projects/organizer_demo",
-    tags: [tagPl("PHP"), tagPl("Akademickie (niekomercyjne)")]
+    tags: [tagPl("PHP"), tagPl("Akademickie")]
   },
   {
     name: "Strona firmy bergsoft",
@@ -141,19 +141,19 @@ const dataEn = [
     name: "Face detection and tracking algorithms (Engineer's degree thesis)",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/praca_inzynierska.pdf",
-    tags: [tagEn("Machine Learning"), tagEn("C++"), tagEn("Academic (non-commercial)")]
+    tags: [tagEn("Machine Learning"), tagEn("C++"), tagEn("Academic")]
   },
   {
     name: "Recognition of structurized handwritten texts (Master's degree thesis)",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/praca_magisterska.pdf",
-    tags: [tagEn("Machine Learning"), tagEn("Matlab"), tagEn("Academic (non-commercial)")]
+    tags: [tagEn("Machine Learning"), tagEn("Matlab"), tagEn("Academic")]
   },
   {
     name: "Personal organiser",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/organizer_demo",
-    tags: [tagEn("PHP"), tagEn("Academic (non-commercial)")]
+    tags: [tagEn("PHP"), tagEn("Academic")]
   },
   {
     name: "Bergsoft company page",
