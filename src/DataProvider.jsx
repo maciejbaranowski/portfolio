@@ -238,16 +238,20 @@ class DataProviderPl {
 
   static getTranslations = () => {
     return {
-      companyName: "BergSoft Maciej Baranowski",
       about: "O mnie",
       projects: "Projekty",
       contact: "Kontakt",
       cv: "CV",
       private: "Prywatne",
       accessRestricted: "Brak dostępu",
-      description: [
-        "Jestem programistą z Wrocławia, od ponad 10 lat komercyjnie tworzę rozwiązania software'owe. Obecnie specjalizuję się w technologiach webowych na każdym poziomie (Typescript, NodeJS, React, Python, AWS)."
-      ],
+      homepage: () => (
+        <div>
+        <h2>Maciej Baranowski - software developer</h2>
+        <span>
+          Jestem programistą z Wrocławia, od ponad 10 lat komercyjnie tworzę rozwiązania software'owe. Obecnie specjalizuję się w technologiach webowych na każdym poziomie:
+        </span>
+        </div>
+      ),
     };
   };
 
@@ -329,16 +333,20 @@ class DataProviderEn {
 
   static getTranslations = () => {
     return {
-      companyName: "BergSoft Maciej Baranowski",
       about: "About",
       projects: "Projects",
       contact: "Contact",
       cv: "CV",
       private: "Private",
       accessRestricted: "No Access",
-      description: [
-        "I am a software developer located in Wroclaw, Poland with 10+ years of experience. These days I specialize in fullstack web development (Typescript, NodeJS, React, Python, AWS).",
-      ],
+      homepage: () => (
+        <div>
+        <h2>Maciej Baranowski - software developer</h2>
+        <span>
+          I am a software developer located in Wroclaw, Poland with 10+ years of experience. These days I specialize in fullstack web development, my core technology stack:
+        </span>
+        </div>
+      ),
     };
   };
 
