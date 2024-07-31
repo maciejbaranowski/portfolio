@@ -7,7 +7,7 @@ import {Private} from "./Private";
 
 import "../styles/Content.css"
 
-import { CSSTransitionGroup } from 'react-transition-group';
+import { TransitionGroup } from 'react-transition-group';
 
 export const NONE = 0;
 export const ABOUT = 1;
@@ -34,9 +34,9 @@ export const getContentPage = props => {
 };
 
 export const Content = props => 
-  <CSSTransitionGroup 
+  <TransitionGroup 
     transitionName="content-page"
     transitionEnterTimeout={3000}
     transitionLeaveTimeout={3000}>
     {getContentPage(props)}
-  </CSSTransitionGroup>
+  </TransitionGroup>

@@ -25,5 +25,4 @@ jspm_packages/
 .env
 
 #ignore built project
-bundle.js
-webpack-stats.json
+dist/
