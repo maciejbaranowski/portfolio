@@ -1,4 +1,4 @@
-import React from "react";
+
 import DataProvider from "./DataProvider";
 
 export const Level1 = props => 

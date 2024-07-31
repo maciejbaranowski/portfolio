@@ -1,4 +1,4 @@
-import React from "react";
+
 import DataProvider from "./DataProvider";
 
 import iconEmail from "../assets/icon-email.svg";

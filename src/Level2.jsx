@@ -1,4 +1,4 @@
-import React from "react";
+
 import {ABOUT, PROJECTS, CONTACT, CV, PRIVATE} from "./Content";
 import DataProvider from "./DataProvider";
 

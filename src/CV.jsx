@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../styles/Cv.css";
 
 import DataProvider from "./DataProvider";

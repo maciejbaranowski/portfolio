@@ -1,4 +1,4 @@
-import React from "react";
+
 import {About} from "./About";
 import Projects from "./Projects";
 import {Contact} from "./Contact";
@@ -16,7 +16,7 @@ export const CV = 3;
 export const CONTACT = 4;
 export const PRIVATE = 5;
 
-export const getContentPage = props => {
+const getContentPage = props => {
   switch (props.activePage) {
     case ABOUT:
       return <About key={1}/>;
