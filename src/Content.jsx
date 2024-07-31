@@ -6,8 +6,6 @@ import { Private } from "./Private";
 
 import "../styles/Content.css";
 
-import { TransitionGroup } from "react-transition-group";
-
 export const NONE = 0;
 export const ABOUT = 1;
 export const PROJECTS = 2;
@@ -33,11 +31,5 @@ const getContentPage = (props) => {
 };
 
 export const Content = (props) => (
-  <TransitionGroup
-    transitionName="content-page"
-    transitionEnterTimeout={3000}
-    transitionLeaveTimeout={3000}
-  >
-    {getContentPage(props)}
-  </TransitionGroup>
+  <div>{getContentPage(props)}</div>
 );
