@@ -246,13 +246,7 @@ class DataProviderPl {
       private: "Prywatne",
       accessRestricted: "Brak dostępu",
       description: [
-        "Jestem programistą z Wrocławia, w ramach firmy Bergsoft zajmuję się: ",
-        <ul>
-          <li key={0}> Rozwijaniem oprogramowania C++</li>
-          <li key={1}> Tworzenie aplikacji internetowych</li>
-          <li key={2}> Consultingiem IT </li>
-          <li key={3}> Zarządzaniem systemami IT</li>
-        </ul>,
+        "Jestem programistą z Wrocławia, od ponad 10 lat komercyjnie tworzę rozwiązania software'owe. Obecnie specjalizuję się w technologiach webowych na każdym poziomie (Typescript, NodeJS, React, Python, AWS)."
       ],
     };
   };
@@ -264,9 +258,24 @@ class DataProviderPl {
         icon: "icon-briefcase",
         descriptions: [
           [
-            "BergSoft Maciej Baranowski",
-            "Programista - konsultant",
-            "Listopad 2017 - dziś",
+            "HSBC",
+            "AWS Fullstack developer",
+            "Listopad 2022 - Obecnie",
+          ],
+          [
+            "Safeguard Global",
+            "Fullstack developer",
+            "Grudzień 2020 - Listopad 2022",
+          ],
+          [
+            "Credit Suisse",
+            "Fullstack developer with Machine learning",
+            "Lipiec 2018 - Grudzień 2020",
+          ],
+          [
+            "Nokia Networks",
+            "Software developer",
+            "Listopad 2017 - Lipiec 2018",
           ],
           ["Qiagen", "C++ Software developer", "Wrzesień 2016 - Listopad 2017"],
           [
@@ -328,13 +337,7 @@ class DataProviderEn {
       private: "Private",
       accessRestricted: "No Access",
       description: [
-        "I am a programmer located in Wroclaw, Poland. I offer services of:",
-        <ul>
-          <li key={0}> C++ Software development</li>
-          <li key={1}> Web applications development</li>
-          <li key={2}> IT Consulting </li>
-          <li key={3}> IT systems maintenance</li>
-        </ul>,
+        "I am a software developer located in Wroclaw, Poland with 10+ years of experience. These days I specialize in fullstack web development (Typescript, NodeJS, React, Python, AWS).",
       ],
     };
   };
@@ -345,9 +348,24 @@ class DataProviderEn {
         text: "Experience",
         descriptions: [
           [
-            "BergSoft Maciej Baranowski",
-            "Software development Consultant",
-            "November 2017 - Ongoing",
+            "HSBC",
+            "AWS Fullstack developer",
+            "November 2022 - Ongoing",
+          ],
+          [
+            "Safeguard Global",
+            "Fullstack developer",
+            "December 2020 - November 2022",
+          ],
+          [
+            "Credit Suisse",
+            "Fullstack developer with Machine learning",
+            "July 2018 - December 2020",
+          ],
+          [
+            "Nokia Networks",
+            "Software developer",
+            "November 2017 - July 2018",
           ],
           [
             "Qiagen",
