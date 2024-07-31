@@ -1,0 +1,24 @@
+.content-page-enter {
+  float: left;
+  opacity: 0.01;
+}
+.content-page-enter-active {
+  opacity: 1;
+  transition: all 3s ease-in-out;
+}
+.content-page-leave {
+  clear: both;
+  opacity: 1;
+}
+.content-page-leave-active {
+  transition: all 3s ease-in-out;
+  opacity: 0.01;  
+}
+
+.content-page-enter,
+.content-page-leave,
+.content-page-enter-active,
+.content-page-leave-active {
+  position: absolute;
+  margin: 0px;
+}
