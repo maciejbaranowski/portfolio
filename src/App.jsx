@@ -13,7 +13,7 @@ export default class App extends React.Component {
   }
 
   render = () => (
-    <div>
+    <div className="centering-flex">
       <Navigation
         onNavigate={(newActivePage) => {
           this.setState({ activePage: newActivePage });
