@@ -22,6 +22,10 @@ h2, h3 {
 
   -webkit-transition: all 0.6s ease-in;
   transition: all 0.6s ease-in;
+
+  --btn-width: 130px;
+  --btn-height: 30px;
+  --btn-gap: 5px;
 }
 
 .button {
@@ -157,14 +161,15 @@ h2, h3 {
   left: 0px;
   z-index: 2;
   opacity: 1;
-  height: 30px;
-  border-radius: 15px;
+  height: var(--btn-height);
+  width: var(--btn-width);
+  border-radius: calc(--btn-height / 2);
 }
 
 @media only screen and (min-width: 640px) {
   .menu-final {
     top: 0px;
-    margin-left: -320px;
+    left: calc(50vw - 340px);
   }
   .centering-flex {
     display: flex;
@@ -177,23 +182,23 @@ h2, h3 {
   }
   .menu-final .level-2 > .button:nth-child(1) {
     top: 5px;
-    left: 5px;
+    left: var(--btn-gap);
   }
   .menu-final .level-2 > .button:nth-child(2) {
     top: 5px;
-    left: 130px;
+    left: calc(var(--btn-gap) * 2 + var(--btn-width));
   }
   .menu-final .level-2 > .button:nth-child(3) {
     top: 5px;
-    left: 255px;
+    left: calc(var(--btn-gap) * 3 + var(--btn-width) * 2);
   }
   .menu-final .level-2 > .button:nth-child(4) {
     top: 5px;
-    left: 380px;
+    left: calc(var(--btn-gap) * 4 + var(--btn-width) * 3);
   }
   .menu-final .level-2 > .button:nth-child(5) {
     top: 5px;
-    left: 505px;
+    left: calc(var(--btn-gap) * 5 + var(--btn-width) * 4);
   }
 }
 
@@ -212,23 +217,23 @@ h2, h3 {
     width: 100%;
   }
   .menu-final .level-2 > .button:nth-child(1) {
-    top: 0px;
+    top: 0;
     width: 100%;
   }
   .menu-final .level-2 > .button:nth-child(2) {
-    top: 30px;
+    top: var(--btn-height);
     width: 100%;
   }
   .menu-final .level-2 > .button:nth-child(3) {
-    top: 60px;
+    top: calc(var(--btn-height) * 2);
     width: 100%;
   }
   .menu-final .level-2 > .button:nth-child(4) {
-    top: 90px;
+    top: calc(var(--btn-height) * 3);
     width: 100%;
   }
   .menu-final .level-2 > .button:nth-child(5) {
-    top: 120px;
+    top: calc(var(--btn-height) * 4);
     width: 100%;
   }
 }
