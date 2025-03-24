@@ -1,3 +1,3 @@
-# Bergsoft landing page
+# Personal homepage
 
 Description to be updated 

@@ -1,10 +1,10 @@
 import DataProvider from "./DataProvider";
 
 export const Level1 = (props) => (
-  <div className="button">
-    <div className="btn-lang">
+  <div className="menu-item">
+    <div className="menu-item-languge">
       <div
-        className="btn-lang-top"
+        className="menu-item-languge-top"
         onClick={() => {
           DataProvider.isEn = false;
           props.onClick();
@@ -13,7 +13,7 @@ export const Level1 = (props) => (
         Polski
       </div>
       <div
-        className="btn-lang-bottom"
+        className="menu-item-languge-bottom"
         onClick={() => {
           DataProvider.isEn = true;
           props.onClick();
@@ -22,9 +22,7 @@ export const Level1 = (props) => (
         English
       </div>
     </div>
-    <div className="btn-logo">
-      Bergsoft
-      <br />
+    <div className="menu-item-logo">
       Maciej Baranowski
     </div>
   </div>

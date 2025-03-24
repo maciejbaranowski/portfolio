@@ -2,7 +2,7 @@ import { ABOUT, PROJECTS, CONTACT, CV, PRIVATE } from "./Content";
 import DataProvider from "./DataProvider";
 
 const Level2Button = (props) => (
-  <div className="button" onClick={props.onClick}>
+  <div className="menu-item" onClick={props.onClick}>
     {props.text}
   </div>
 );

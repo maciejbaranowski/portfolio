@@ -11,10 +11,6 @@ export const Contact = () => (
     <h2>{DataProvider.getTranslations().contact}</h2>
     <div className="contact-items">
       <span className="mini-panel">
-        <img src={iconEmail} className="icon" /> E-mail:
-        bergsoft[at]maciej-baranowski.pl
-      </span>
-      <span className="mini-panel">
         <img src={iconLinkedin} className="icon" /> LinkedIn:{" "}
         <a href="https://www.linkedin.com/in/maciej-baranowski-a7918779">
           Link
