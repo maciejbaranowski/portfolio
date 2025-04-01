@@ -299,25 +299,17 @@ class DataProviderPl {
         icon: "icon-file-text-alt",
         descriptions: [
           [
-            "Informatyka studia magisterskie",
+            "Informatyka studia magisterskie (ukończone z oceną bardzo dobrą)",
             "Politechnika Wrocławska",
-            "2015 - 2016 (ukończone z oceną bardzo dobrą)",
+            "2015 - 2016",
           ],
           [
-            "Automatyka i Robotyka studia inżynierskie",
+            "Automatyka i Robotyka studia inżynierskie (ukończone z wyróżnieniem)",
             "Politechnika Wrocławska",
-            "2011 - 2015 (ukończone z wyróżnieniem)",
+            "2011 - 2015",
           ],
         ],
-      },
-      {
-        text: "Języki",
-        icon: "icon-flag",
-        descriptions: [
-          ["Angielski", "Zaawansowany (certyfikat poziom C1)", ""],
-          ["Niemiecki", "Podstawowy", ""],
-        ],
-      },
+      }
     ];
   };
 }
@@ -397,18 +389,10 @@ class DataProviderEn {
         descriptions: [
           ["Computer Science (MSc)", "Wroclaw Univ. of Tech.", "2015 - 2016"],
           [
-            "Control Engineering and Robotics (Eng)",
+            "Control Engineering and Robotics (Eng) (Finished with excellent grade)",
             "Wroclaw Univ. of Tech.",
-            "2011 - 2015 (Finished with excellent grade)",
+            "2011 - 2015",
           ],
-        ],
-      },
-      {
-        text: "Languages",
-        descriptions: [
-          ["Polish", "Native", ""],
-          ["English", "Advanced (C1 Level certificate)", ""],
-          ["German", "Basic", ""],
         ],
       },
     ];

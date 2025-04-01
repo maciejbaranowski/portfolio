@@ -2,9 +2,14 @@
   user-select: none;
 }
 
+body {
+  color: rgba(30, 30, 30)
+}
+
 h2, h3 {
   margin-top: 0px;
 }
+
 .mini-panel h4 {
   margin-top: 0px;
 }

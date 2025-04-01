@@ -6,19 +6,23 @@ export const Cv = () => {
   let sections = DataProvider.getCv().map((section, i) => {
     let elements = section.descriptions.map((desc, i) => {
       return (
-        <div className="mini-panel" key={i}>
-          <span className="cv-element-title">{desc[0]}</span> | {desc[1]}
-          <br />
-          {desc[2]}
-          {desc[2] === "" ? "" : <br />}
-        </div>
+        <li key={i}>
+          <div className="date">
+            {desc[2]}
+            {desc[2] === "" ? "" : <br />}
+          </div>
+          <div className="title">{desc[1]}</div>
+          <div className="descr">{desc[0]}</div>
+        </li>
       );
     });
     return (
-      <div key={i} className="cv-section">
+      <>
         <h4>{section.text}</h4>
-        {elements}
-      </div>
+        <ul key={i} className="cv-section">
+          {elements}
+        </ul>
+      </>
     );
   });
   return (
