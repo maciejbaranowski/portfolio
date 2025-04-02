@@ -1,4 +1,4 @@
-ul {
+ul.cv-container {
   --col-gap: 2rem;
   --line-w: 0.25rem;
   display: grid;
@@ -11,7 +11,7 @@ ul {
   padding: 0 1rem;
 }
 
-ul::before {
+ul.cv-container::before {
   content: "";
   grid-column: 1;
   grid-row: 1 / span 20;
@@ -19,7 +19,7 @@ ul::before {
   border-radius: calc(var(--line-w) / 2);
 }
 
-ul li {
+ul.cv-container li {
   grid-column: 2;
   --inlineP: 1.5rem;
   --pillColor: teal;
@@ -29,7 +29,7 @@ ul li {
   grid-template-rows: min-content min-content min-content;
 }
 
-ul li .date {
+ul.cv-container li .date {
   --dateH: 3rem;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
@@ -48,7 +48,7 @@ ul li .date {
 }
 
 /* circle */
-ul li .date::after {
+ul.cv-container li .date::after {
   content: "";
   position: absolute;
   width: 2rem;
@@ -62,49 +62,54 @@ ul li .date::after {
   right: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 
-ul li .title,
-ul li .descr {
+ul.cv-container li .title,
+ul.cv-container li .descr {
   position: relative;
-  padding-inline: 0.5rem;
 }
-ul li .title {
+ul.cv-container li .title {
   overflow: hidden;
   padding-block-start: 0.5rem;
   padding-block-end: 0.5rem;
   font-weight: 700;
 }
-ul li .descr {
+ul.cv-container li .descr {
   padding-block-end: 1rem;
   font-weight: 300;
 }
 
 @media (min-width: 640px) {
-  ul {
+  ul.cv-container {
     grid-template-columns: 1fr var(--line-w) 1fr;
     padding: 0px;
     width: 100%
   }
-  ul::before {
+  ul.cv-container::before {
     grid-column: 2;
   }
-  ul li:nth-child(odd) {
+  ul.cv-container li:nth-child(odd) {
     grid-column: 1;
   }
-  ul li:nth-child(even) {
+  ul.cv-container li:nth-child(even) {
     grid-column: 3;
   }
 
   /* start second card */
-  ul li:nth-child(2) {
+  ul.cv-container li:nth-child(2) {
     grid-row: 2/4;
   }
 
-  ul li:nth-child(odd) .date::after {
+  ul.cv-container li:nth-child(odd) .date::after {
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
   
-  ul li:nth-child(odd) .date {
+  ul.cv-container li:nth-child(odd) .date {
     border-radius: calc(var(--dateH) / 2);
   }
+}
+
+.icons {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
 }

@@ -1,6 +1,5 @@
 import DataProvider from "./DataProvider";
 
-import iconEmail from "../assets/icon-email.svg";
 import iconFacebook from "../assets/icon-facebook.svg";
 import iconGithub from "../assets/icon-github.svg";
 import iconLinkedin from "../assets/icon-linkedin.svg";

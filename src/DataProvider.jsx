@@ -1,19 +1,3 @@
-const tagsEn = [];
-const tagsPl = [];
-
-const tagPl = (tag) => {
-  let index = tagsPl.indexOf(tag);
-  if (index != -1) return index;
-  tagsPl.push(tag);
-  return tagsPl.indexOf(tag);
-};
-const tagEn = (tag) => {
-  let index = tagsEn.indexOf(tag);
-  if (index != -1) return index;
-  tagsEn.push(tag);
-  return tagsEn.indexOf(tag);
-};
-
 const dataPl = [
   {
     name: "3D Homepage",
@@ -21,10 +5,10 @@ const dataPl = [
       "Aplikacja webowa tworząca stronę startową w postaci grywalnego modelu 3D.",
     link: "http://bergsoft.pl/projects/homepage",
     tags: [
-      tagPl("Javascript"),
-      tagPl("ReactJS"),
-      tagPl("3D"),
-      tagPl("ThreeJS"),
+      "Javascript",
+      "ReactJS",
+      "3D",
+      "ThreeJS",
     ],
   },
   {
@@ -33,12 +17,12 @@ const dataPl = [
       "Aplikacja webowa mająca na celu udostępnianie obrazów z podpisami w formie cytatów.",
     link: "https://github.com/maciejbaranowski/wallpapers-frontend",
     tags: [
-      tagPl("Javascript"),
-      tagPl("ReactJS"),
-      tagPl("PHP"),
-      tagPl("HTML5"),
-      tagPl("CSS3"),
-      tagPl("Bootstrap3"),
+      "Javascript",
+      "ReactJS",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "Bootstrap3",
     ],
   },
   {
@@ -47,7 +31,7 @@ const dataPl = [
       "Skrypt w języku Python, który posłużył do masowego generowania obrazów z cytatami, jako content aplikacji webowej.\
     Wykorzystano wbudowane pakiety do przetwarzania obrazów i obsługi baz danych SQLite",
     link: "http://tapetycytaty.pl",
-    tags: [tagPl("Python")],
+    tags: ["Python"],
   },
   {
     name: "Kalkulator B2B",
@@ -55,12 +39,12 @@ const dataPl = [
       "Kalkulator umożliwiający obliczenie kosztów i opodatkowania dla programistów pracujących w ramach tzw. umowy B2B",
     link: "https://github.com/maciejbaranowski/b2b_calculator",
     tags: [
-      tagPl("Javascript"),
-      tagPl("ReactJS"),
-      tagPl("PHP"),
-      tagPl("HTML5"),
-      tagPl("CSS3"),
-      tagPl("Material UI"),
+      "Javascript",
+      "ReactJS",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "Material UI",
     ],
   },
   {
@@ -68,7 +52,7 @@ const dataPl = [
     description:
       "Prosta strona-wizytówka dla firmy Pixels A.M.G. z nietypowym układem w formie pływających okręgów",
     link: "http://bergsoft.pl/projects/pixels",
-    tags: [tagPl("Javascript"), tagPl("HTML5"), tagPl("CSS3")],
+    tags: ["Javascript", "HTML5", "CSS3"],
   },
   {
     name: "Osobista strona-wizytówka",
@@ -76,10 +60,10 @@ const dataPl = [
       "Prosta strona typu SPA z wyglądem opartym o framework bootstrap",
     link: "https://maciej-baranowski.herokuapp.com/",
     tags: [
-      tagPl("Javascript"),
-      tagPl("HTML5"),
-      tagPl("CSS3"),
-      tagPl("Bootstrap3"),
+      "Javascript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap3",
     ],
   },
   {
@@ -88,38 +72,38 @@ const dataPl = [
       "Aplikacja webowa umożliwiająca wizualizację zdjęć w formie porozrzucanych fotografii z podpisami.\
       Jako źródło zdjęć zostało użyte publiczne API serwisu Flickr",
     link: "http://bergsoft.pl/projects/thailand",
-    tags: [tagPl("Javascript"), tagPl("HTML5"), tagPl("CSS3")],
+    tags: ["Javascript", "HTML5", "CSS3"],
   },
   {
     name: "Algorytmy detekcji i śledzenia twarzy (praca inżynierska)",
     description:
       "Implementacja i analiza algorytmów detekcji twarzy metodą dopasowywania wzorców falek Haara",
     link: "http://bergsoft.pl/projects/praca_inzynierska.pdf",
-    tags: [tagPl("Machine Learning"), tagPl("C++"), tagPl("Akademickie")],
+    tags: ["Machine Learning", "C++", "Akademickie"],
   },
   {
     name: "Algorytmy rozpoznawania ręcznych tekstów strukturyzowanych (praca magisterska)",
     description:
       "Implementacja i analiza metod rozpoznawania ręcznie pisanych liter, oparte o metody klasfikacji sieciami neuronowymi i SVM",
     link: "http://bergsoft.pl/projects/praca_magisterska.pdf",
-    tags: [tagPl("Machine Learning"), tagPl("Matlab"), tagPl("Akademickie")],
+    tags: ["Machine Learning", "Matlab", "Akademickie"],
   },
   {
     name: "Organizer osobisty",
     description:
       "Organizer osobisty wykonany jako projekt na studiach, z wykorzystaniem PHP i MySql",
     link: "http://bergsoft.pl/projects/organizer_demo",
-    tags: [tagPl("PHP"), tagPl("Akademickie")],
+    tags: ["PHP", "Akademickie"],
   },
   {
     name: "Strona firmy bergsoft",
     description: "Strona na której właśnie jesteś",
     link: "http://bergsoft.pl",
     tags: [
-      tagPl("ReactJS"),
-      tagPl("Javascript"),
-      tagPl("HTML5"),
-      tagPl("CSS3"),
+      "ReactJS",
+      "Javascript",
+      "HTML5",
+      "CSS3",
     ],
   },
 ];
@@ -130,10 +114,10 @@ const dataEn = [
     description: "Web application serving as gameable 3D scene hub.",
     link: "http://bergsoft.pl/projects/homepage",
     tags: [
-      tagEn("Javascript"),
-      tagEn("ReactJS"),
-      tagEn("3D"),
-      tagEn("ThreeJS"),
+      "Javascript",
+      "ReactJS",
+      "3D",
+      "ThreeJS",
     ],
   },
   {
@@ -142,12 +126,12 @@ const dataEn = [
       "Web application for displaying a huge database of quote-images (Content in polish version only).",
     link: "https://github.com/maciejbaranowski/wallpapers-frontend",
     tags: [
-      tagEn("Javascript"),
-      tagEn("ReactJS"),
-      tagEn("PHP"),
-      tagEn("HTML5"),
-      tagEn("CSS3"),
-      tagEn("Bootstrap3"),
+      "Javascript",
+      "ReactJS",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "Bootstrap3",
     ],
   },
   {
@@ -155,7 +139,7 @@ const dataEn = [
     description:
       "Python Script to generate content for web application (see link below - content in polish version only).",
     link: "http://tapetycytaty.pl",
-    tags: [tagEn("Python")],
+    tags: ["Python"],
   },
   {
     name: "B2B Calculator",
@@ -163,12 +147,12 @@ const dataEn = [
       "Tax and costs calculator for self-employed software developers in Poland (content in polish version only)",
     link: "https://github.com/maciejbaranowski/b2b_calculator",
     tags: [
-      tagEn("Javascript"),
-      tagEn("ReactJS"),
-      tagEn("PHP"),
-      tagEn("HTML5"),
-      tagEn("CSS3"),
-      tagEn("Material UI"),
+      "Javascript",
+      "ReactJS",
+      "PHP",
+      "HTML5",
+      "CSS3",
+      "Material UI",
     ],
   },
   {
@@ -176,17 +160,17 @@ const dataEn = [
     description:
       "Simple landing page for Pixels A.M.G. company with innovative circle-floating layout (content in polish version only)",
     link: "http://bergsoft.pl/projects/pixels",
-    tags: [tagEn("Javascript"), tagEn("HTML5"), tagEn("CSS3")],
+    tags: ["Javascript", "HTML5", "CSS3"],
   },
   {
     name: "Personal website",
     description: "Simple personal website built on bootstrap framework",
     link: "https://maciej-baranowski.herokuapp.com/",
     tags: [
-      tagEn("Javascript"),
-      tagEn("HTML5"),
-      tagEn("CSS3"),
-      tagEn("Bootstrap3"),
+      "Javascript",
+      "HTML5",
+      "CSS3",
+      "Bootstrap3",
     ],
   },
   {
@@ -194,44 +178,40 @@ const dataEn = [
     description:
       "Web application to display set of photos with descriptions - utilizes Flickr API as a source of data",
     link: "http://bergsoft.pl/projects/thailand",
-    tags: [tagEn("Javascript"), tagEn("HTML5"), tagEn("CSS3")],
+    tags: ["Javascript", "HTML5", "CSS3"],
   },
   {
     name: "Face detection and tracking algorithms (Engineer's degree thesis)",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/praca_inzynierska.pdf",
-    tags: [tagEn("Machine Learning"), tagEn("C++"), tagEn("Academic")],
+    tags: ["Machine Learning", "C++", "Academic"],
   },
   {
     name: "Recognition of structurized handwritten texts (Master's degree thesis)",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/praca_magisterska.pdf",
-    tags: [tagEn("Machine Learning"), tagEn("Matlab"), tagEn("Academic")],
+    tags: ["Machine Learning", "Matlab", "Academic"],
   },
   {
     name: "Personal organiser",
     description: "Polish version only available",
     link: "http://bergsoft.pl/projects/organizer_demo",
-    tags: [tagEn("PHP"), tagEn("Academic")],
+    tags: ["PHP", "Academic"],
   },
   {
     name: "Bergsoft company page",
     description: "The very website you are seeing right now",
     link: "http://bergsoft.pl",
     tags: [
-      tagEn("ReactJS"),
-      tagEn("Javascript"),
-      tagEn("HTML5"),
-      tagEn("CSS3"),
+      "ReactJS",
+      "Javascript",
+      "HTML5",
+      "CSS3",
     ],
   },
 ];
 
 class DataProviderPl {
-  static getTags = () => {
-    return tagsPl;
-  };
-
   static getProjects = () => {
     return dataPl;
   };
@@ -244,14 +224,11 @@ class DataProviderPl {
       cv: "CV",
       private: "Prywatne",
       accessRestricted: "Brak dostępu",
-      homepage: () => (
-        <div>
-        <h2>Maciej Baranowski - software developer</h2>
-        <span>
-          Jestem programistą z Wrocławia, od ponad 10 lat komercyjnie tworzę rozwiązania software'owe. Obecnie specjalizuję się w technologiach webowych na każdym poziomie:
-        </span>
-        </div>
-      ),
+      homepage: {
+        name: "Maciej Baranowski",
+        title: "Software Developer",
+        description: "Jestem programistą z Wrocławia, od ponad 10 lat komercyjnie tworzę rozwiązania software'owe. Obecnie specjalizuję się w technologiach webowych na każdym poziomie:"
+      }
     };
   };
 
@@ -261,64 +238,71 @@ class DataProviderPl {
         text: "Doświadczenie",
         icon: "icon-briefcase",
         descriptions: [
-          [
-            "HSBC",
-            "AWS Fullstack developer",
-            "Listopad 2022 - Obecnie",
-          ],
-          [
-            "Safeguard Global",
-            "Fullstack developer",
-            "Grudzień 2020 - Listopad 2022",
-          ],
-          [
-            "Credit Suisse",
-            "Fullstack developer with Machine learning",
-            "Lipiec 2018 - Grudzień 2020",
-          ],
-          [
-            "Nokia Networks",
-            "Software developer",
-            "Listopad 2017 - Lipiec 2018",
-          ],
-          ["Qiagen", "C++ Software developer", "Wrzesień 2016 - Listopad 2017"],
-          [
-            "Nokia Networks",
-            "Software developer",
-            "Październik 2014 - Wrzesień 2016",
-          ],
-          [
-            "Nokia Solutions and Networks",
-            "Software developer",
-            "Czerwiec 2013 - Wrzesień 2013",
-          ],
+          {
+            title: "AWS Fullstack developer",
+            description: "Dla HSBC",
+            timespan: "Listopad 2022 - Obecnie",
+            icons: ["react", "typescript", "amazonwebservices", "terraform", "python"],
+          },
+          {
+            title: "Fullstack developer",
+            description: "Dla Safeguard Global",
+            timespan: "Grudzień 2020 - Listopad 2022",
+            icons: ["react", "typescript", "python", "amazonwebservices"],
+          },
+          {
+            title: "Fullstack developer with Machine learning",
+            description: "Dla Credit Suisse",
+            timespan: "Lipiec 2018 - Grudzień 2020",
+            icons: ["python", "react", "javascript"],
+          },
+          {
+            title: "Software developer",
+            description: "Dla Nokia Networks",
+            timespan: "Listopad 2017 - Lipiec 2018",
+            icons: ["cplusplus", "python"],
+          },
+          {
+            title: "C++ Software developer",
+            description: "Dla Qiagen",
+            timespan: "Wrzesień 2016 - Listopad 2017",
+            icons: ["cplusplus", "python", "javascript"],
+          },
+          {
+            title: "Software developer",
+            description: "Dla Nokia Networks",
+            timespan: "Październik 2014 - Wrzesień 2016",
+            icons: ["cplusplus", "python"]
+          },
+          {
+            title: "Software developer",
+            description: "Dla Nokia Solutions and Networks",
+            timespan: "Czerwiec 2013 - Wrzesień 2013",
+            icons: ["cplusplus", "python"]
+          },
         ],
       },
       {
         text: "Edukacja",
         icon: "icon-file-text-alt",
         descriptions: [
-          [
-            "Informatyka studia magisterskie (ukończone z oceną bardzo dobrą)",
-            "Politechnika Wrocławska",
-            "2015 - 2016",
-          ],
-          [
-            "Automatyka i Robotyka studia inżynierskie (ukończone z wyróżnieniem)",
-            "Politechnika Wrocławska",
-            "2011 - 2015",
-          ],
+          {
+            title: "Informatyka",
+            description: "Politechnika Wrocławska studia magisterskie (ukończone z oceną bardzo dobrą)",
+            timespan: "2015 - 2016"
+          },
+          {
+            title: "Automatyka i Robotyka",
+            description: "Politechnika Wrocławska - studia inżynierskie (ukończone z wyróżnieniem)",
+            timespan: "2011 - 2015"
+          },
         ],
-      }
+      },
     ];
   };
 }
 
 class DataProviderEn {
-  static getTags = () => {
-    return tagsEn;
-  };
-
   static getProjects = () => {
     return dataEn;
   };
@@ -331,14 +315,11 @@ class DataProviderEn {
       cv: "CV",
       private: "Private",
       accessRestricted: "No Access",
-      homepage: () => (
-        <div>
-        <h2>Maciej Baranowski - software developer</h2>
-        <span>
-          I am a software developer located in Wroclaw, Poland with 10+ years of experience. These days I specialize in fullstack web development, my core technology stack:
-        </span>
-        </div>
-      ),
+      homepage: {
+        name: "Maciej Baranowski",
+        title: "Software Developer",
+        description: "I am a software developer located in Wroclaw, Poland with 10+ years of experience. These days I specialize in fullstack web development, my core technology stack:"
+      },
     };
   };
 
@@ -347,52 +328,63 @@ class DataProviderEn {
       {
         text: "Experience",
         descriptions: [
-          [
-            "HSBC",
-            "AWS Fullstack developer",
-            "November 2022 - Ongoing",
-          ],
-          [
-            "Safeguard Global",
-            "Fullstack developer",
-            "December 2020 - November 2022",
-          ],
-          [
-            "Credit Suisse",
-            "Fullstack developer with Machine learning",
-            "July 2018 - December 2020",
-          ],
-          [
-            "Nokia Networks",
-            "Software developer",
-            "November 2017 - July 2018",
-          ],
-          [
-            "Qiagen",
-            "C++ Software developer",
-            "September 2016 - November 2017",
-          ],
-          [
-            "Nokia Networks",
-            "Software developer",
-            "October 2014 - September 2016",
-          ],
-          [
-            "Nokia Solutions and Networks",
-            "Software developer",
-            "June 2013 - September 2013",
-          ],
+          {
+            title: "AWS Fullstack developer",
+            description: "Company: HSBC",
+            timespan: "November 2022 - Ongoing",
+            icons: ["react", "typescript", "amazonwebservices", "terraform", "python"],
+          },
+          {
+            title: "Fullstack developer",
+            description: "Company: Safeguard Global",
+            timespan: "December 2020 - November 2022",
+            icons: ["react", "typescript", "python", "amazonwebservices"],
+          },
+          {
+            title: "Fullstack developer with Machine learning",
+            description: "Company: Credit Suisse",
+            timespan: "July 2018 - December 2020",
+            icons: ["python", "react", "javascript"],
+          },
+          {
+            title: "Software developer",
+            description: "Company: Nokia Networks",
+            timespan: "November 2017 - July 2018",
+            icons: ["cplusplus", "python"],
+          },
+          {
+            title: "C++ Software developer",
+            description: "Company: Qiagen",
+            timespan: "September 2016 - November 2017",
+            icons: ["cplusplus", "python", "javascript"],
+          },
+          {
+            title: "Software developer",
+            description: "Company: Nokia Networks",
+            timespan: "October 2014 - September 2016",
+            icons: ["cplusplus", "python"]
+          },
+          {
+            title: "Software developer",
+            description: "Company: Nokia Solutions and Networks",
+            timespan: "June 2013 - September 2013",
+            icons: ["cplusplus", "python"]
+          },
         ],
       },
       {
         text: "Education",
         descriptions: [
-          ["Computer Science (MSc)", "Wroclaw Univ. of Tech.", "2015 - 2016"],
-          [
-            "Control Engineering and Robotics (Eng) (Finished with excellent grade)",
-            "Wroclaw Univ. of Tech.",
-            "2011 - 2015",
-          ],
+          {
+            title: "Computer Science (MSc)",
+            description: "Wroclaw Univ. of Tech.",
+            timespan: "2015 - 2016"
+          },
+          {
+            title: "Control Engineering and Robotics (Eng) (Finished with excellent grade)",
+            description: "Wroclaw Univ. of Tech.",
+            timespan: "2011 - 2015"
+          },
         ],
       },
     ];
@@ -401,13 +393,6 @@ class DataProviderEn {
 
 export default class DataProvider {
   static isEn = false;
-  static getTags = () => {
-    if (DataProvider.isEn) {
-      return DataProviderEn.getTags();
-    } else {
-      return DataProviderPl.getTags();
-    }
-  };
 
   static getProjects = () => {
     if (DataProvider.isEn) {

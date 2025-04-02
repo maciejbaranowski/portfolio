@@ -1,40 +1,47 @@
 import DataProvider from "./DataProvider";
 import { DevIconWithLabel } from "./DevIconWrapper";
+import ProfileImage from "../assets/profile.jpg";
+
+import "../styles/About.css";
 
 export const About = () => {
-  const HomePage = DataProvider.getTranslations().homepage
+  const { title, description, name } = DataProvider.getTranslations().homepage;
   return <>
-    <HomePage />
+    <img src={ProfileImage} className="profile-image" alt="Profile image" />
+    <h2>{name}</h2>
+    <h3>{title}</h3>
+    <p>{description}</p>
+
     <div className="mini-panel">
       <h3>Front-end</h3>
       <div className="flex flex-gapped">
-        <DevIconWithLabel icon="react" label="React" />
-        <DevIconWithLabel icon="typescript" label="Typescript" />
-        <DevIconWithLabel icon="javascript" label="Javascript" />
+        <DevIconWithLabel icon="react"/>
+        <DevIconWithLabel icon="typescript"/>
+        <DevIconWithLabel icon="javascript"/>
       </div>
     </div>
     <div className="mini-panel">
       <h3>Back-end</h3>
       <div className="flex flex-gapped">
-        <DevIconWithLabel icon="nodejs" label="NodeJS" />
-        <DevIconWithLabel icon="python" label="Python" />
-        <DevIconWithLabel icon="cplusplus" label="C++" />
+        <DevIconWithLabel icon="nodejs"/>
+        <DevIconWithLabel icon="python"/>
+        <DevIconWithLabel icon="cplusplus"/>
       </div>
     </div>
     <div className="mini-panel">
       <h3>Cloud and Devops</h3>
       <div className="flex flex-gapped">
-        <DevIconWithLabel icon="amazonwebservices" label="AWS" />
-        <DevIconWithLabel icon="terraform" label="Terraform" />
-        <DevIconWithLabel icon="jenkins" label="Jenkins" />
+        <DevIconWithLabel icon="amazonwebservices"/>
+        <DevIconWithLabel icon="terraform"/>
+        <DevIconWithLabel icon="jenkins"/>
       </div>
     </div>
     <div className="mini-panel">
       <h3>Database</h3>
       <div className="flex flex-gapped">
-        <DevIconWithLabel icon="sqldeveloper" label="SQL" />
-        <DevIconWithLabel icon="dynamodb" label="DynamoDB" />
-        <DevIconWithLabel icon="mongodb" label="MongoDB" />
+        <DevIconWithLabel icon="sqldeveloper"/>
+        <DevIconWithLabel icon="dynamodb"/>
+        <DevIconWithLabel icon="mongodb"/>
       </div>
     </div>
 

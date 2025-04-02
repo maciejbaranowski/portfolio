@@ -1,14 +1,4 @@
-import DataProvider from "./DataProvider";
 import "../styles/Projects.css";
-
-const getTags = (tags) => {
-  return tags.map((tag, index) => (
-    <span key={index}>
-      {" "}
-      <span className="project-tag">#{DataProvider.getTags()[tag]}</span>
-    </span>
-  ));
-};
 
 const getLink = (link) => {
   if (link === undefined) return "";
@@ -18,13 +8,18 @@ const getLink = (link) => {
     </a>
   );
 };
-export const ProjectDescription = (props) => {
+export const ProjectDescription = ({project}) => {
   return (
     <div className="mini-panel">
-      <span className="project-name">{props.project.name}</span>
-      <p>{props.project.description}</p>
-      <p>🔗 {getLink(props.project.link)}</p>
-      <p>{getTags(props.project.tags)}</p>
+      <span className="project-name">{project.name}</span>
+      <p>{project.description}</p>
+      <p>🔗 {getLink(project.link)}</p>
+      <p>{project.tags.map((tag, index) => (
+        <span key={index}>
+          {" "}
+          <span className="project-tag">#{tag}</span>
+        </span>
+      ))}</p>
     </div>
   );
 };

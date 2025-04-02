@@ -1,34 +1,37 @@
 import "../styles/Cv.css";
 
 import DataProvider from "./DataProvider";
+import { DevIconWithLabel } from "./DevIconWrapper";
 
 export const Cv = () => {
-  let sections = DataProvider.getCv().map((section, i) => {
-    let elements = section.descriptions.map((desc, i) => {
-      return (
-        <li key={i}>
-          <div className="date">
-            {desc[2]}
-            {desc[2] === "" ? "" : <br />}
-          </div>
-          <div className="title">{desc[1]}</div>
-          <div className="descr">{desc[0]}</div>
-        </li>
-      );
-    });
-    return (
-      <>
-        <h4>{section.text}</h4>
-        <ul key={i} className="cv-section">
-          {elements}
-        </ul>
-      </>
-    );
-  });
   return (
     <div>
       <h2>{DataProvider.getTranslations().cv}</h2>
-      {sections}
+      {DataProvider.getCv().map((section) => (
+        <CvSection key={section.text} section={section} />
+      ))}
     </div>
   );
 };
+
+const CvSection = ({section}) => {
+  return (
+    <>
+      <h4>{section.text}</h4>
+      <ul className="cv-container">
+        {section.descriptions.map((desc, i) => <CvItem key={desc.title} item={desc}/>)}
+      </ul>
+    </>
+  );
+}
+
+const CvItem = ({ item }) => (
+  <li>
+    <div className="date">{item.timespan}</div>
+    <div className="title">{item.title}</div>
+    <div className="descr">{item.description}</div>
+    {item.icons && <div className="icons">{item.icons.map(icon => (
+      <DevIconWithLabel icon={icon} label="" size={2} key={icon} />
+    ))}</div>}
+  </li>
+)
